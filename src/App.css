@@ -1,0 +1,67 @@
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(26, 77, 46, 0.05) 0%, rgba(255, 107, 0, 0.05) 100%);
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.favorite-btn {
+  transition: all 0.2s ease;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+}
+
+.favorite-btn.active {
+  color: #FF6B00;
+  fill: #FF6B00;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+.category-card h3 {
+  position: relative;
+  z-index: 2;
+}
+
+.cart-badge {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.github-ad {
+  background: linear-gradient(135deg, #1A4D2E 0%, #2d7a4e 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  margin: 3rem 0;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
